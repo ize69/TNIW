@@ -1,6 +1,7 @@
 # TNIW
 
-an interative playbill replacement with a built in microbloging: think a twitter/threads for everyone in the audaince. along with every thing else tipicaly found within the playbill  
+An interactive app with built-in microblogging, allowing the audience to share videos, images, and text in a form similar to a twitter thread. Additionally contains other elements that would typically be contained in a playbill.
+
 using the Remix React framework
 # prerequisits 
 Node.js version (^14.17.0, or >=16.0.0)
