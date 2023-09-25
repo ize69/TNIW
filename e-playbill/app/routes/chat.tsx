@@ -12,7 +12,7 @@ export default function Info() {
   return (
     <div>
       <TopSection /> {/* Use the TopSection component */}
-      {/* Additional content specific to the Chat page */}
+      {/* Additional content specific to the Chat page that will call the remark 42 microbloging server*/}
     </div>
   );
 }
