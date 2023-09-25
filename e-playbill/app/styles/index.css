@@ -47,3 +47,9 @@ a.link {
 a.link:visited {
   color: #fff;
 }
+
+.error {
+  color: red;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
