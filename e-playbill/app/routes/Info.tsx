@@ -1,5 +1,7 @@
 import React from "react";
-import TopSection from "./TopSection"; // Import the TopSection component
+import TopSection from "./TopSection";
+import CastSection from "./info-sections/CastSection";
+import CrewSection from "./info-sections/CrewSection";
 import type { LinksFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 import { Outlet } from "react-router-dom";
@@ -13,6 +15,9 @@ export default function Info() {
     <div>
       <TopSection /> {/* Use the TopSection component */}
       {/* Additional content specific to the Info page */}
+      <CastSection />
+
+      <CrewSection />
     </div>
   );
 }
