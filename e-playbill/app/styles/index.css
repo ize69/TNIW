@@ -24,7 +24,7 @@ button {
   font-size: 1.5rem;
   background-color: #f76902; /* Button background color */
   color: #fff; /* Button text color */
-  border: none;
+  border: 0.1em solid #ffffff; /* Solid border */
   border-radius: 0.2em; /* Use em for border radius */
   cursor: pointer;
   text-decoration: none;
@@ -61,25 +61,36 @@ a.link:visited {
   margin: 0 auto; 
   
 }
-.crew-members {
-  justify-content: left;
-  display: flex;
-  flex-wrap: wrap; /* Wrap items onto a new line when there's not enough space */
-  justify-content: flex-start; /* Align items to the left side of the screen */
-}
 
 .crew-member {
   margin: 1rem; /* Add spacing between crew members */
+  display: flex; /* Use flex display to align image and text */
+  align-items: flex-start; /* Align items to the top of the container */
   text-align: center; /* Center text within each crew member section */
-}
+  align-self: right;
+} 
 
-/* Update the styles for person-name */
+/* Update the styles for person-name and whatTheyDo */
 .person-name {
   font-weight: bold; /* Make the name bold */
   margin: 0; /* Remove default margin for <p> */
+  padding-right: 4rem;
 }
 
-/* Add styles for whatTheyDo */
 .whatTheyDo {
   margin: 0; /* Remove default margin for <p> */
+  align-self: flex-start; /* Align text to the top of the container */
+}
+
+/* Media query to switch to horizontal layout on larger screens */
+@media screen and (min-width: 768px) {
+  .crew-member {
+    flex-direction: row; /* Display image and text side by side */
+    align-items: center; /* Center items vertically */
+    text-align: right; /* Align text to the left */
+  }
+
+  .headshots {
+    margin-right: 1rem; /* Add spacing between image and text */
+  }
 }
