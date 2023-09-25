@@ -1,4 +1,5 @@
 import type { LinksFunction } from "@remix-run/node";
+import { Outlet } from "react-router-dom"; // Import Outlet for nested routing
 
 import stylesUrl from "~/styles/index.css";
 
@@ -7,5 +8,18 @@ export const links: LinksFunction = () => [
 ];
 
 export default function IndexRoute() {
-  return <div>Hello Index Route</div>;
+  return (
+    <div className="navigation">
+      <header>
+        <h1>Welcome to the show</h1>
+      </header>
+      <main>
+        <Outlet />
+      </main>
+      <div>
+        <button>info</button>
+        <button>chat</button>
+      </div>
+    </div>
+  );
 }
