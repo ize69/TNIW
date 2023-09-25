@@ -4,7 +4,8 @@ import React from "react";
 import type { LinksFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 import { Outlet } from "react-router-dom";
-import stylesUrl from "~/styles/info-sections.css";
+import "~/styles/infoSections.css";
+import stylesUrl from "~/styles/infoSections.css";
 export const links: LinksFunction = () => [{ rel: "stylesheet", href: stylesUrl },];
 
 function CastSection() {
