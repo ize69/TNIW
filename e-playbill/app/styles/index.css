@@ -53,3 +53,11 @@ a.link:visited {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+.headshots{
+  max-width: 50%; /* Set the maximum width to 50% of the parent container */
+  height: auto; /* Maintain the aspect ratio of the image */
+  display: block; /* Ensure proper spacing between images */
+  margin: 0 auto; /* Center the image horizontally in its container */
+
+}
