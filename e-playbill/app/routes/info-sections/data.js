@@ -1,4 +1,5 @@
 // data.js
+// contains the data about ever one involve in the production
 export const peopleData = [
     {
       first: "Joe",
