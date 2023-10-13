@@ -16,8 +16,8 @@ function CastSection() {
   
     return (
       <div className="main-style-guide">
-        <h2>Crew</h2>
-        <p>Crew info</p>
+        <h2>Cast</h2>
+        <p>Cast info</p>
         <div className="crew-members">
           {filteredData.map((person) => (
             <PersonCard key={person.first} person={person} />

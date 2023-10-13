@@ -10,5 +10,5 @@ export let loader: LoaderFunction = async () => {
 // Export your routes
 export let routes = {
   // Your other routes...
-  "/info": loader, "/chat": loader
+  "/info": loader, "/chat": loader, "./info-sections/PeopleFilter":loader
 };
