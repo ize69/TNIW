@@ -13,14 +13,14 @@ export interface Person {
 
 export const peopleData = [
     {
-      first: "Joe",
-      last: "Smoe",
+      first: "Gail",
+      last: "Gonzalez",
       role: "cast",
       crew: "cast",
       billingPriority: 1,
       bio: "Joe Smoe is a great actor.",
       photoPath: "headshots/headshot-filler.png",
-      whatTheyDo: "stuff",
+      whatTheyDo: "Guide",
     },
     {
       first: "james",
