@@ -19,7 +19,7 @@ export const peopleData = [
       crew: "cast",
       billingPriority: 1,
       bio: "Joe Smoe is a great actor.",
-      photoPath: "headshots/headshot-filler.png",
+      photoPath: "headshots/GailG.jpg",
       whatTheyDo: "Guide",
     },
     {
