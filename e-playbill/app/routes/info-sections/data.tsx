@@ -39,7 +39,7 @@ export const peopleData = [
       crew: "cast",
       billingPriority: 2,
       bio: "Valentina Camino [she/her] (Laertes) is a transfer 1st-year student majoring in Liberal Arts–Journalism. She is from Kenosha, WI. Valentina’s favorite role was playing the mother of Veruca Salt in Charlie and the Chocolate Factory. Though her role is a minor character, she is still shining brightly. She’d like to thank everybody! Mwah gorgeous.",
-      photoPath: "headshots/ValentinaC.png",
+      photoPath: "headshots/ValentinaC.jpg",
       whatTheyDo: "Laertes",
     },
     {
@@ -49,7 +49,7 @@ export const peopleData = [
       crew: "cast",
       billingPriority: 2,
       bio: "Elliana Soto [she/her] (Polonius) is a 4th-year ASL Interpreting major. Born and raised in Rochester, NY, her favorite role was in high school when she played Marci in Almost, Maine. Elliana would like to thank all of the cast and crew for such an amazing experience.",
-      photoPath: "headshots/EllianaS.png",
+      photoPath: "headshots/EllianaS.jpg",
       whatTheyDo: "Polonius",
     },
     {
@@ -59,7 +59,7 @@ export const peopleData = [
       crew: "cast",
       bio: "Lavada Holz [they/them] (Hamlet) is a 2nd-year ASL Interpreting major from Sultan, WA. If this play was on a stage, it would be their first onstage role since high school! They love working with their castmates, like they did as a swing for the RIT & NTID Performing Arts production of Everybody. They have also appeared in Tracks! and Oh, What a Tangled Web! They hope that whichever cast of characters you see, you’ll love this one-of-a-kind performance. Enjoy!",
       billingPriority: 2,
-      photoPath: "headshots/LavadaH.png",
+      photoPath: "headshots/LavadaH.jpg",
       whatTheyDo: "Hamlet",
     },
     {
@@ -69,7 +69,7 @@ export const peopleData = [
       crew: "cast",
       bio: "Sofia DeCredico [she/her] (Guide) is in her last year in the Applied and Computational Mathematics BS/MS program. Some of Sofia’s favorite roles include dancing in a production of Spoon River Anthology and playing Bradley in Men on Boats. Sofia would like to thank the entire cast and crew for working so hard to put this unique show together. Hope you enjoy!",
       billingPriority: 2,
-      photoPath: "headshots/SofiaD.png",
+      photoPath: "headshots/SofiaD.jpg",
       whatTheyDo: "Guide",
     },
     {
@@ -79,7 +79,7 @@ export const peopleData = [
       crew: "cast",
       bio: "Rebecca Lewis [she/they] (Ophelia) is a 2nd-year Medical Illustration major from Colorado Springs, CO. Before this show you may have seen her on campus as the Lottery Roles in Everybody and Vera Claythorne in And Then There Were None. She would like you to know that her cat’s name is in fact Ophelia, but she could not be here tonight. Enjoy our take on Shakespeare’s Hamlet!",
       billingPriority: 2,
-      photoPath: "headshots/RebeccaL.png",
+      photoPath: "headshots/RebeccaL.jpg",
       whatTheyDo: "Ophelia",
     },
     {
@@ -89,7 +89,7 @@ export const peopleData = [
       crew: "cast",
       bio: "Nathalie Phongsavanh [she/her] (Laertes) is a 1st-year student currently majoring in Science Exploration. Coming from an international background, some of Nathalie’s favorite roles include The Lion from The Wizard of Oz and The Cheshire Cat from Alice Through The Looking Glass–like the charismatic cool cat she is. She would like to thank the cast, crew, and audience members. Please please please enjoy the show!",
       billingPriority: 2,
-      photoPath: "headshots/NathalieP.png",
+      photoPath: "headshots/NathalieP.jpg",
       whatTheyDo: "Laertes",
     },
     {
@@ -99,7 +99,7 @@ export const peopleData = [
       crew: "cast",
       bio: "Bruno Karpinksi (Polonius) is a 1st-year Mechanical Engineering major from Bowie, MD. His favorite role is that of Colonel Mustard from his high school’s production of Clue. He hopes you enjoy this unique theater experience.",
       billingPriority: 2,
-      photoPath: "headshots/BrunoK.png",
+      photoPath: "headshots/BrunoK.jpg",
       whatTheyDo: "Polonius",
     },
     {
@@ -109,8 +109,18 @@ export const peopleData = [
       crew: "cast",
       bio: "Teddy Walsh [he/him] (Hamlet) is a 4th-year Game Design and Development major. He’s from Newton, MA. Last year he played Evil Soldier #2 and the voice of several villagers in Deaf Republic! He won’t tell you to enjoy the show because it's a free country and you can do what you want.",
       billingPriority: 2,
-      photoPath: "headshots/TeddyW.png",
+      photoPath: "headshots/TeddyW.jpg",
       whatTheyDo: "Hamlet",
     },
+    {
+      first: "tech",
+      last: "guy",
+      role: "crew",
+      crew: "crew",
+      bio: "does stuff",
+      billingPriority: 2,
+      photoPath: "headshots/headshot-placeholder.png",
+      whatTheyDo: "Guide",
+    }
   ];
   
