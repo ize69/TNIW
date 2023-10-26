@@ -8,7 +8,10 @@ export let loader: LoaderFunction = async () => {
 };
 
 // Export your routes
+// Export your routes
 export let routes = {
   // Your other routes...
-  "/info": loader, "/chat": loader, "./info-sections/PeopleFilter":loader
+  "/info": loader,
+  "/chat": loader,
+  "/info-sections/PeopleFilter": loader
 };

@@ -1,49 +1,58 @@
-//filters what people are shown in the people section
-//has a dropdown menu to select the role to filter by if the fiter is pressed
-
 import React from "react";
-import CrewSection from "./CrewSection";
+import { filterPeopleByRole } from "./filterPeopleByRole";
+import "./filter.css";
 import CastSection from "./CastSection";
-interface FilterProps {
-    role: string;
-    setRole: React.Dispatch<React.SetStateAction<string>>;
+import CrewSection from "./CrewSection";
+
+interface Person {
+  first: string;
+  last: string;
+  role: string;
+  crew: string;
+  image: string;
+  bio: string;
 }
 
-//defines the dropdown menu and updates the page when the selectionis changed
-function Filter({ role, setRole }: FilterProps) {
-    return (
-        <div className="filter">
-            <label htmlFor="role">Filter by role:</label>
-            <select
-                name="role"
-                id="role"
-                value={role}
-                onChange={(e) => {
-                    setRole(e.target.value);
-                    console.log("Filter changed to:", e.target.value);
-                }}
-            >
-                <option value="cast">Cast</option>
-                <option value="crew">Crew</option>
-            </select>
-        </div>
-    );
-}
-//defines the people section that is re rendered when the filter is changed
-function PeopleFilter() {
-    const [role, setRole] = React.useState("crew");
-
-    React.useEffect(() => {
-        console.log("PeopleFilter re-rendered with role:", role);
-    }, [role]);
-
-    return (
-        <div>
-            <Filter role={role} setRole={setRole} />
-            {role === "cast" ? <CastSection /> : <CrewSection />}
-        </div>
-    );
+interface PeopleFilterProps {
+  role: string;
+  setRole: React.Dispatch<React.SetStateAction<string>>;
 }
 
+export function PeopleFilter(props: PeopleFilterProps) {
+  const { role, setRole } = props;
+  const people = filterPeopleByRole([role]);
 
-export default PeopleFilter;
+  const handleRoleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setRole(e.target.value);
+  };
+
+  React.useEffect(() => {
+    console.log("PeopleFilter re-rendered with role:", role);
+  }, [role]);
+
+  const roles = people.map((person) => person.role);
+  const uniqueRoles = [...new Set(roles)];
+
+  return (
+    <div className="filter">
+      <label htmlFor="role">Filter by role:</label>
+      <select
+        name="role"
+        id="role"
+        value={role}
+        onChange={handleRoleChange}
+      >
+        {uniqueRoles.map((role) => (
+          <option key={role} value={role}>
+            {role}
+          </option>
+        ))}
+      </select>
+      {role === "cast" ? (
+        <CastSection people={people} />
+      ) : (
+        <CrewSection people={people} />
+      )}
+    </div>
+  );
+}

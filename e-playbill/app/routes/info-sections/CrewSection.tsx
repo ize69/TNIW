@@ -1,21 +1,21 @@
 import React from "react";
-import type { LinksFunction } from "@remix-run/node";
-import { peopleData } from "./data";
+import type { Person } from "./data";
 import stylesUrl from "~/styles/infoSections.css";
 import PersonCard from "./PersonCard";
 
-export const links: LinksFunction = () => [{ rel: "stylesheet", href: stylesUrl }];
+interface CrewSectionProps {
+  people: Person[];
+}
 
-function CrewSection() {
-  const roleToCheck = "crew";
-  const filteredData = peopleData.filter((person) => person.crew === roleToCheck);
+function CrewSection(props: CrewSectionProps) {
+  const { people } = props;
 
   return (
     <div className="main-style-guide">
       <h2>Crew</h2>
       <p>Crew info</p>
       <div className="crew-members">
-        {filteredData.map((person) => (
+        {people.map((person) => (
           <PersonCard key={person.first} person={person} />
         ))}
       </div>

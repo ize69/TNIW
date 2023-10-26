@@ -94,3 +94,32 @@ a.link:visited {
     margin-right: 1rem; /* Add spacing between image and text */
   }
 }
+
+/* Styles for the filter selection drop down in the info tab */
+.filter {
+  margin: 1rem; /* Adds spacing between crew members */
+  display: flex; /* Uses flex display for alignment of image and text */
+  align-items: center; /* Aligns items vertically in the center */
+  justify-content: center; /* Centers items horizontally */
+}
+
+/* Styles for the dropdown within the filter */
+.filter select {
+  padding: 0.5rem; /* Adds padding inside the dropdown */
+  font-size: 1rem; /* Sets the font size */
+  border: 1px solid #ccc; /* Adds a border */
+  border-radius: 5px; /* Rounds the corners of the dropdown */
+  background-color: #fff; /* Sets the background color */
+  cursor: pointer; /* Shows a pointer cursor on hover */
+}
+
+/* Styles for dropdown option */
+.filter select option {
+  background-color: #fff; /* Sets the background color of options */
+  color: #333; /* Sets the text color of options */
+}
+
+/* Styles for dropdown option on hover */
+.filter select option:hover {
+  background-color: #f1f1f1; /* Sets the background color on hover */
+}
