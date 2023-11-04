@@ -1,9 +1,8 @@
 body {
-  color: hsl(0, 0%, 100%);
   font: arial;
-  background-image: linear-gradient(to bottom, rgba(247, 105, 2, 1) 20%, rgba(255, 255, 255, 1) 100%);
-  background-size: cover;
-  background-repeat: no-repeat;
+
+  color: #bc5790;
+  background-color:#333;
 }
 
 .navigation {
@@ -55,7 +54,7 @@ a.link:visited {
 }
 
 .headshots {
-  max-width: 50%; 
+  width: 50%; 
   height: auto; 
   display: block; 
   margin: 0 auto; 
@@ -67,8 +66,8 @@ a.link:visited {
   display: flex; /* Use flex display to align image and text */
   align-items: flex-start; /* Align items to the top of the container */
   text-align: center; /* Center text within each crew member section */
-  align-self: right;
-} 
+  align-self: left;
+}
 
 /* Update the styles for person-name and whatTheyDo */
 .person-name {
