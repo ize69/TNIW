@@ -105,6 +105,7 @@ header button:hover {
   text-align: center;
   font-size: 6vw;
   font-weight: 550;
+  margin: .25vw;
 }
 
 /* Styles for the filter selection drop down in the info tab */
