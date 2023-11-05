@@ -11,14 +11,10 @@ function CastSection(props: CastSectionProps) {
   const { people } = props;
 
   return (
-    <div className="main-style-guide">
-      <h2>Cast</h2>
-      <p>Cast info</p>
-      <div className="cast-members">
+    <div className="cast-members">
         {people.map((person) => (
           <PersonCard key={person.first} person={person} />
         ))}
-      </div>
     </div>
   );
 }

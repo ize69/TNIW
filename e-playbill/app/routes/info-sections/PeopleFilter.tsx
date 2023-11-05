@@ -1,21 +1,19 @@
 import React from "react";
 import { filterPeopleByRole } from "./filterPeopleByRole";
-import "./filter.css";
+import "../../styles/filter.css";
 import CastSection from "./CastSection";
 import CrewSection from "./CrewSection";
-
-interface Person {
-  first: string;
-  last: string;
-  role: string;
-  crew: string;
-  image: string;
-  bio: string;
-}
 
 interface PeopleFilterProps {
   role: string;
   setRole: React.Dispatch<React.SetStateAction<string>>;
+}
+
+enum GroupName {
+  Rosemary,
+  Pansy,
+  Rue,
+  Violet
 }
 
 export function PeopleFilter(props: PeopleFilterProps) {
@@ -34,14 +32,9 @@ export function PeopleFilter(props: PeopleFilterProps) {
   const uniqueRoles = [...new Set(roles)];
 
   return (
-    <div className="filter">
-      <label htmlFor="role">Filter by role:</label>
-      <select
-        name="role"
-        id="role"
-        value={role}
-        onChange={handleRoleChange}
-      >
+    <main>
+      <label htmlFor="groupSelecter">Filter by group:</label>
+      <select name="groupSelector" id="groupSelector" value={role} onChange={handleRoleChange}>
         {uniqueRoles.map((role) => (
           <option key={role} value={role}>
             {role}
@@ -53,6 +46,6 @@ export function PeopleFilter(props: PeopleFilterProps) {
       ) : (
         <CrewSection people={people} />
       )}
-    </div>
+    </main>
   );
 }

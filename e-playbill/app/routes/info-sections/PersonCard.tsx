@@ -5,7 +5,9 @@ interface Person {
   last: string;
   crew: string;
   photoPath: string;
-  whatTheyDo: string;
+  role: string;
+  bio: string;
+  group: number;
 }
 
 interface PersonCardProps {
@@ -14,12 +16,13 @@ interface PersonCardProps {
 
 const PersonCard: React.FC<PersonCardProps> = ({ person }) => {
   return (
-    <div key={person.first} className="crew-member">
-      <img src={`assets/${person.photoPath}`} alt={`${person.first} ${person.last}`} className="headshots" />
-      <div>
-        <p className="person-name">{`${person.first} ${person.last}`}</p>
-        <p className="whatTheyDo">{person.whatTheyDo}</p>
+    <div key={person.role} className='castMember'>
+      <div className="person-info">
+        <span className="role">{person.role}</span>
+        <span className="name">{`${person.first} ${person.last}`}</span>
       </div>
+      <img src={`assets/${person.photoPath}`} alt={`${person.first} ${person.last}`} className="headshots" />
+      <p className="bio">{person.bio}</p>
     </div>
   );
 };

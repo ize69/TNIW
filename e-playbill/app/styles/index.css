@@ -1,3 +1,11 @@
+a.link {
+  text-decoration: none;
+  color: #fff;
+}
+a.link:visited {
+  color: #fff;
+}
+
 body {
   font: arial;
 
@@ -5,7 +13,7 @@ body {
   background-color:#333;
 }
 
-.navigation {
+header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,11 +21,11 @@ body {
   text-align: center;
 }
 
-header {
+header header {
   font-size: 1.75rem; /* Adjust font size as needed */
 }
 
-button {
+header button {
   margin: .25em; /* Use em for margin */
   padding: 0.5em 1em; /* Use em for padding */
   font-size: 1.5rem;
@@ -32,66 +40,52 @@ button {
   
 }
 
-button:hover {
+header button:hover {
   background-color: #ff9900; /* Change button color on hover */
   font-size: 1.5rem; /* Increase font size */
   padding: 0.4em 1em; /* Decrease padding to maintain button size */
   font-weight: bold;
 }
 
-a.link {
-  text-decoration: none;
-  color: #fff;
-}
-a.link:visited {
-  color: #fff;
+/* Container element for cast members */
+.cast-members {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  font-family: Helvetica, sans-serif;
 }
 
-.error {
-  color: red;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
+.castMember {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-.headshots {
-  width: 50%; 
-  height: auto; 
-  display: block; 
-  margin: 0 auto; 
-  
-}
-
-.crew-member {
-  margin: 1rem; /* Add spacing between crew members */
-  display: flex; /* Use flex display to align image and text */
-  align-items: flex-start; /* Align items to the top of the container */
-  text-align: center; /* Center text within each crew member section */
-  align-self: left;
+  margin: 1vw;
 }
 
 /* Update the styles for person-name and whatTheyDo */
-.person-name {
-  font-weight: bold; /* Make the name bold */
-  margin: 0; /* Remove default margin for <p> */
-  padding-right: 4rem;
+.person-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 8vw;
+  font-weight: bold;
 }
 
-.whatTheyDo {
-  margin: 0; /* Remove default margin for <p> */
-  align-self: flex-start; /* Align text to the top of the container */
+.headshots {
+  object-fit: contain;
+  width: 80%;
 }
 
-/* Media query to switch to horizontal layout on larger screens */
-@media screen and (min-width: 768px) {
-  .crew-member {
-    flex-direction: row; /* Display image and text side by side */
-    align-items: center; /* Center items vertically */
-    text-align: right; /* Align text to the left */
-  }
-
-  .headshots {
-    margin-right: 1rem; /* Add spacing between image and text */
-  }
+.bio {
+  text-align: center;
+  font-size: 6vw;
+  font-weight: 550;
 }
 
 /* Styles for the filter selection drop down in the info tab */
@@ -99,7 +93,7 @@ a.link:visited {
   margin: 1rem; /* Adds spacing between crew members */
   display: flex; /* Uses flex display for alignment of image and text */
   align-items: center; /* Aligns items vertically in the center */
-  justify-content: center; /* Centers items horizontally */
+  justify-content: left; /* Centers items horizontally */
 }
 
 /* Styles for the dropdown within the filter */

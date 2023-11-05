@@ -13,7 +13,7 @@ export default function App() {
           name="viewport"
           content="width=device-width, initial-scale=1"
         />
-        <title>playbill</title>
+        <title>Thy Name Is Woman</title>
         <Links />
       </head>
       <body>

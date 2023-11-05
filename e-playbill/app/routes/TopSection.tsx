@@ -2,7 +2,6 @@
 import React from "react";
 import type { LinksFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
-import { Outlet } from "react-router-dom";
 import stylesUrl from "~/styles/index.css";
 export const links: LinksFunction = () => [
     { rel: "stylesheet", href: stylesUrl },
@@ -10,12 +9,11 @@ export const links: LinksFunction = () => [
 
 function TopSection() {
   return (
-    <div className="navigation">
+    <header>
       <header>
         <h1>Welcome to the show</h1>
       </header>
-      <main>{/* Content for the top section, if needed */}</main>
-      <div>
+      <nav>
         <button>
             <Link to="/info" className="link">
                 info
@@ -26,8 +24,8 @@ function TopSection() {
                 chat
             </Link>
         </button>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 }
 
