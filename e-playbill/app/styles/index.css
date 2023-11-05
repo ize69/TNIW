@@ -85,7 +85,7 @@ header button:hover {
   width: 80%;
   height: 100%;
   overflow: hidden;
-  border-radius: 0px; /* You can adjust the border-radius value to control the roundness of the corners */
+  border-radius: 4vw; /* You can adjust the border-radius value to control the roundness of the corners */
   position: relative;
 }
 
