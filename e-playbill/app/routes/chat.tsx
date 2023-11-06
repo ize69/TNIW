@@ -6,7 +6,6 @@ import stylesUrl from "~/styles/index.css";
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesUrl },
 ];
-
 export default function Chat() {
   useEffect(() => {
     const loadScripts = async () => {
@@ -39,9 +38,9 @@ export default function Chat() {
 
     // Clean up function will be called on component unmount
     return () => {
-      // Clean up logic (if any) here
+      // Clean up code here
     };
-  }, []); // Empty dependency array ensures the effect runs once after the initial render
+  }, []);
 
   return (
     <div>
