@@ -31,6 +31,19 @@ export default function Chat() {
 
   return (
     <div>
+      <script>
+        {`
+          var remark_config = {
+            host: '172.0.0.1',
+            site_id: 'remark',
+          };
+          
+        `}
+      </script>
+      <script>
+        {'!function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);'}
+      </script>
+      <div id="remark42"></div>
       <TopSection /> {/* Use the TopSection component */}
       {serverFound ? (
         // Render your chat content when the server is found
@@ -39,7 +52,6 @@ export default function Chat() {
         </div>
       ) : (
         // Render an error message when the server is not found
-        
         <div>
           <p className="error">Error: The server is not accessible.</p>
         </div>
