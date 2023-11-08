@@ -13,7 +13,6 @@ class Dedupe extends ArboristWorkspaceCmd {
     'strict-peer-deps',
     'package-lock',
     'omit',
-    'include',
     'ignore-scripts',
     'audit',
     'bin-links',

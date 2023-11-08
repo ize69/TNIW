@@ -52,7 +52,6 @@ const commands = [
   'restart',
   'root',
   'run-script',
-  'sbom',
   'search',
   'set',
   'shrinkwrap',

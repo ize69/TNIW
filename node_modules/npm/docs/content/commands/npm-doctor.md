@@ -1,7 +1,7 @@
 ---
 title: npm-doctor
 section: 1
-description: Check the health of your npm environment
+description: Check your npm environment
 ---
 
 ### Synopsis

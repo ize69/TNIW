@@ -111,9 +111,13 @@ const getter = ({ data, key }) => {
       }, {})
       return _data
     } else {
-      if (!Object.hasOwn(_data, k)) {
+      // if can't find any more values, it means it's just over
+      // and there's nothing to return
+      if (!_data[k]) {
         return undefined
       }
+
+      // otherwise sets the next value
       _data = _data[k]
     }
 

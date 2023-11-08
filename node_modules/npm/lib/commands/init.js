@@ -16,11 +16,6 @@ const BaseCommand = require('../base-command.js')
 class Init extends BaseCommand {
   static description = 'Create a package.json file'
   static params = [
-    'init-author-name',
-    'init-author-url',
-    'init-license',
-    'init-module',
-    'init-version',
     'yes',
     'force',
     'scope',
