@@ -63,7 +63,10 @@ header button:hover {
   justify-content: center;
   align-items: center;
 
-  margin: 1vw;
+  margin: 2vw;
+  padding: 3vw;
+
+  border: solid;
 }
 
 /* Update the styles for person-name and whatTheyDo */
@@ -73,6 +76,7 @@ header button:hover {
   justify-content: center;
   align-items: center;
 
+  text-align: center;
   font-size: 8vw;
   font-weight: bold;
   margin: .25vw;

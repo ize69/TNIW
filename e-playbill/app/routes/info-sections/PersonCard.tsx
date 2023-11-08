@@ -19,7 +19,7 @@ const PersonCard: React.FC<PersonCardProps> = ({ person }) => {
     <div key={person.role} className='castMember'>
       <div className="person-info">
         <span className="name">{`${person.first} ${person.last}`}</span>
-        <span className="role">as {person.role}</span>
+        <span className="role">{person.role}</span>
       </div>
       <div className="image-wrapper">
         <img src={`assets/${person.photoPath}`} alt={`${person.first} ${person.last}`} className="headshots" />

@@ -11,7 +11,7 @@ function TopSection() {
   return (
     <header>
       <header>
-        <h1>Welcome to the show</h1>
+        <h1>Welcome to the Thy Name Is Woman</h1>
       </header>
       <nav>
         <button>
